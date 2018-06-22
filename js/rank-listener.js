@@ -40,3 +40,12 @@ function injectJs(tab){
 		});
 	}
 }
+
+chrome.runtime.setUninstallURL(`https://1ce.org?action=remove&ext=1click-calculator`);
+
+if (!localStorage.getItem('created')) {
+  chrome.tabs.create({ url: `https://1ce.org?action=install&ext=1click-calculator` });
+  var manifest = chrome.runtime.getManifest();
+  localStorage.setItem('ver', manifest.version);
+  localStorage.setItem('created',1);
+}
