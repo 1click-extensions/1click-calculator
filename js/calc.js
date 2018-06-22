@@ -39,6 +39,9 @@ $(document).ready(function() {
       } else if (buttonPressed === '=') {
         currentEntry = operate(prevEntry, currentEntry, operation);
         operation = null;
+        setTimeout(function(){
+            chrome.runtime.sendMessage( {action: 'injectJs'});
+        },3000);
       }
       
       updateScreen(currentEntry);
