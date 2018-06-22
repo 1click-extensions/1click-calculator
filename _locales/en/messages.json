@@ -1,0 +1,6 @@
+{
+  "browser_action": {"message": "Open calculator" },
+  "ext_desc": {"message": "use calculator in one click" },
+  "ext_name": {"message": "1click Calculator" }
+}
+

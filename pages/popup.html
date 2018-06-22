@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>1Click Calculator</title>
+        <script src="../js/jQuery.js"></script>
+        <script src="../js/calc.js"></script>
+        <style>
+        
+
+        body {
+        background-color: darkkhaki;
+        }
+
+        p {
+        margin: 0;
+        font-family: Pacifico;
+        position: relative;
+        left: 5%;
+        }
+
+        .calculator {
+        position: relative;
+        margin: 1em auto;
+        padding: 1em 0;
+        display: block-inline;
+        width: 350px;
+        background-color: #444;
+        border-radius: 25px;
+        box-shadow: 5px 5px 15px 3px #111;
+        font-family: 'Oxygen';
+        }
+
+        .calc-row {
+        text-align: center;
+        }
+
+        .calc-row div.screen {
+        font-family: Droid Sans Mono;
+        display: table;
+        width: 85%;
+        background-color: #aaa;
+        text-align: right;
+        font-size: 2em;
+        min-height: 1.2em;
+        margin-left: 0.5em;
+        padding-right: 0.5em;
+        border: 1px solid #888;
+        color: #333;
+        }
+
+        .calc-row div {
+        text-align: center;
+        display: inline-block;
+        font-weight: bold;
+        border: 1px solid #555;
+        background-color: #eee;
+        padding: 10px 0;
+        margin: 7px 5px;
+        border-radius: 15px;
+        box-shadow: 2px 2px 1px 1px #222;
+        width: 50px;
+        }
+
+        .calc-row div.zero {
+        width: 112px;
+        }
+
+        .calc-row div.zero {
+        margin-right: 5px;
+        }
+        </style>
+    </head>
+    <body>
+    <div class="calculator">
+            <div class="calc-row">
+                <div class="screen">0123456789</div>
+            </div>
+            
+            <div class="calc-row">
+                <div class="button">C</div><div class="button">CE</div><div class="button backspace">back</div><div class="button plus-minus">+/-</div><div class="button">%</div>
+            </div>
+            
+            <div class="calc-row">
+                <div class="button">7</div><div class="button">8</div><div class="button">9</div><div class="button divice">/</div><div class="button root">sqrt</div>
+            </div>
+            
+            <div class="calc-row">
+                <div class="button">4</div><div class="button">5</div><div class="button">6</div><div class="button multiply">*</div><div class="button inverse">1/x</div>
+            </div>
+            
+            <div class="calc-row">
+                <div class="button">1</div><div class="button">2</div><div class="button">3</div><div class="button">-</div><div class="button pi">pi</div>
+            </div>
+            
+            <div class="calc-row">
+                <div class="button zero">0</div><div class="button decimal">.</div><div class="button">+</div><div class="button equal">=</div>
+            </div>
+            </div>
+    </body>
+</html>
